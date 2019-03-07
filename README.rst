@@ -28,6 +28,21 @@ available in ``flake8``::
 Changes
 -------
 
+1.0 - 2019-03-07
+````````````````
+
+Breaking changes
+^^^^^^^^^^^^^^^^
+
+* codes now begin with `TOD` instead of `T`
+* a line containing multiple `TODO` words will raise an error for each instance
+* different error codes for each word
+  * `TODO:  TOD000`
+  * `FIXME: TOD001`
+  * `XXX:   TOD002`
+* drop compatibility for `flake8 < 3.7.0`
+
+
 0.7 - 2016-11-15
 ````````````````
 

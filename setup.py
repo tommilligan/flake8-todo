@@ -31,12 +31,13 @@ setup(
     license='MIT',
     py_modules=['flake8_todo'],
     install_requires=[
+        'flake8 >= 3.7.0',
         'pycodestyle >= 2.0.0, < 3.0.0'
     ],
     zip_safe=False,
     entry_points={
         'flake8.extension': [
-            'T000 = flake8_todo:check_todo_notes',
+            'TOD = flake8_todo:check_todo_notes',
         ],
     },
     classifiers=[
